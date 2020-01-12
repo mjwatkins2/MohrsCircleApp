@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:id="@+id/principals_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="@string/Principals"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+		<TableLayout
+		    android:id="@+id/principals_data"
+		    android:layout_below="@id/principals_lbl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:padding="5dp">
+			
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/S1_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/S1"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+				
+	            <include
+			        android:id="@+id/S1_val"
+	                layout="@layout/formattedtextview_view" />
+	            
+		    </TableRow>
+		    
+  		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/S2_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/S2"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/S2_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		    
+   		    <TableRow
+   		        android:id="@+id/S3_row"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/S3_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/S3"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/S3_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		
+		</TableLayout>
+		
+        <TextView
+            android:id="@+id/directions_lbl"
+            android:layout_below="@id/principals_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="@string/PrincipalDirections"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        <!--RadioGroup
+            android:id="@+id/directions_radio"
+            android:layout_below="@id/directions_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+            
+            <RadioButton
+                android:id="@+id/directions_vector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Vectors"
+           		android:textAppearance="?android:attr/textAppearanceSmall"/>
+            
+            <RadioButton
+                android:id="@+id/directions_cosines"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/Cosines"
+           		android:textAppearance="?android:attr/textAppearanceSmall"/>
+            
+        </RadioGroup-->
+        
+		<TableLayout
+		    android:id="@+id/directions_data"
+		    android:layout_below="@id/directions_lbl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:padding="5dp">
+			
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+			        android:id="@+id/n1_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/n1"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		        
+	            <include
+			        android:id="@+id/n1_val"
+	                layout="@layout/formattedtextview_view" />
+	            
+		    </TableRow>
+		    
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+			        android:id="@+id/n2_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/n2"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/n2_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		    
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+			        android:id="@+id/n3_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/n3"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/n3_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		
+		</TableLayout>
+		
+		<TextView
+            android:id="@+id/invariants_lbl"
+            android:layout_below="@id/directions_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="@string/Invariants"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+		<TableLayout
+		    android:id="@+id/invariants_data"
+		    android:layout_below="@id/invariants_lbl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:padding="5dp">
+			
+		    
+		    <TableRow
+		        android:id="@+id/I1_row"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/I1_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/I1"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/I1_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		    
+		    <TableRow
+		        android:id="@+id/I2_row"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/I2_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/I2"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/I2_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		    
+		    <TableRow
+		        android:id="@+id/I3_row"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/I3_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/I3"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/I3_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		
+		</TableLayout>
+		
+		
+		<TextView
+            android:id="@+id/otherprop_lbl"
+            android:layout_below="@id/invariants_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="3dp"
+            android:text="@string/Other"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+		<TableLayout
+		    android:id="@+id/otherprop_data"
+		    android:layout_below="@id/otherprop_lbl"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:padding="5dp">
+			
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/Seq_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/Seq"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/Seq_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		    
+		    <TableRow
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="2dp">
+		        
+		        <TextView
+		            android:id="@+id/Tmax_lbl"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right"
+		            android:text="@string/Tmax"
+            		android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	            <include
+			        android:id="@+id/Tmax_val"
+	                layout="@layout/formattedtextview_view" />
+		        
+		    </TableRow>
+		
+		</TableLayout>
+		
+		<!-- TextView
+            android:id="@+id/hydrostatic_lbl"
+            android:layout_below="@id/invariants_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Hydrostatic Tensor"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		<TextView
+            android:id="@+id/deviator_lbl"
+            android:layout_below="@id/hydrostatic_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Deviator Tensor"
+            android:textAppearance="?android:attr/textAppearanceLarge" /-->
+		
+    </RelativeLayout>
+</ScrollView>

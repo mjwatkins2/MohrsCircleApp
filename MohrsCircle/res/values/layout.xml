@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="two_panes" type="bool" format="boolean">false</item>
+    <item type="integer" format="integer" name="linewidth">3</item>
+    <item type="integer" name="plot_text_size" format="integer">24</item>
+</resources>

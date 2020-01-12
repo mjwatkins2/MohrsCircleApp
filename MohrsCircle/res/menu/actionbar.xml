@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:menuCategory="container" android:orderInCategory="1"><item android:icon="@drawable/ic_menu_dim" android:title="@string/DimLong" android:titleCondensed="@string/DimShort" android:orderInCategory="1" android:menuCategory="container" android:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/menu_2D" android:title="@string/Dim2D" android:titleCondensed="@string/Dim2D" android:orderInCategory="1" android:menuCategory="container" />
+            <item android:id="@+id/menu_3D" android:title="@string/Dim3D" android:titleCondensed="@string/Dim3D" android:orderInCategory="2" android:menuCategory="container" />
+        </menu>
+    </item><item android:titleCondensed="@string/StressStrainShort" android:title="@string/StressStrainLong" android:orderInCategory="2" android:menuCategory="container" android:icon="@drawable/ic_menu_stressstrain" android:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/menu_stress" android:title="@string/Stress" android:titleCondensed="@string/Stress" android:orderInCategory="1" android:menuCategory="container" />
+            <item android:id="@+id/menu_strain" android:title="@string/Strain" android:titleCondensed="@string/Strain" android:orderInCategory="2" android:menuCategory="container" />
+            <item android:id="@+id/menu_rosette" android:menuCategory="container" android:orderInCategory="3" android:titleCondensed="@string/rosette" android:title="@string/rosette"/>
+        </menu>
+    </item></group>
+    
+    <item android:id="@+id/menu_mat" android:orderInCategory="2" android:title="@string/MaterialLong" android:menuCategory="container" android:titleCondensed="@string/MaterialShort" android:icon="@drawable/ic_menu_mat" android:showAsAction="ifRoom"></item>
+    
+
+</menu>

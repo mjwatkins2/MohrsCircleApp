@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,3"
+    android:padding="5dp">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+        
+        <TextView
+            android:id="@+id/S1_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="@string/S1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<include
+		    android:id="@+id/S1_val"
+		    layout="@layout/formattedtextview_view" />
+		
+		<TextView
+            android:id="@+id/S2_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="@string/S2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+		<include
+		    android:id="@+id/S2_val"
+		    layout="@layout/formattedtextview_view" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:id="@+id/S3_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="@string/S3"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <include
+		    android:id="@+id/S3_val"
+		    layout="@layout/formattedtextview_view" />
+        
+        <TextView
+            android:id="@+id/Tmax_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:text="@string/Tmax"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+        <include
+		    android:id="@+id/Tmax_val"
+		    layout="@layout/formattedtextview_view" />
+
+    </TableRow>
+
+</TableLayout>

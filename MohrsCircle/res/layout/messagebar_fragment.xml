@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messagebar_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/msgBarBG" >
+
+	<Button
+        android:id="@+id/messagebar_hide"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/CloseX"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/msgBarText" />
+
+    <Button
+        android:id="@+id/messagebar_show"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/messagebar_hide"
+        android:text="@string/explain"
+        android:textColor="@color/msgBarText" />
+    
+    <TextView
+        android:id="@+id/messagebar_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/messagebar_show"
+        android:text="@string/DimensionSwitchTitle"
+        android:textColor="@color/msgBarText" />
+
+</RelativeLayout>

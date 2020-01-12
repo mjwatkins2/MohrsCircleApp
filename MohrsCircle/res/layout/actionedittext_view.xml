@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.engineercalc.mohrscircle.view.ActionEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:inputType="numberDecimal|numberSigned"
+    android:digits="0123456789.,-"
+	android:imeOptions="actionDone"
+	android:selectAllOnFocus="true" />
+

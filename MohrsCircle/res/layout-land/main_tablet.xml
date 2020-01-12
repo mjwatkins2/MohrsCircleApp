@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+        
+        <fragment
+	        android:id="@+id/input_fragment"
+	        android:name="com.engineercalc.mohrscircle.InputFragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="2"
+	        tools:layout="@layout/input_fragment_tablet" />
+		
+	    <View
+	        android:layout_width="2dp"
+	        android:layout_height="match_parent"
+	        android:background="#DADADA" />	
+	    <fragment
+	        android:name="com.engineercalc.mohrscircle.PlotFragment"
+	    	android:id="@+id/plot_fragment"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="4"
+	        tools:layout="@layout/plot_fragment_tablet" />
+    
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/messagebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#FFFFFF"
+	    android:descendantFocusability="beforeDescendants"
+	    android:focusableInTouchMode="true" >
+	
+	    <TextView
+	        android:id="@+id/choose2_lbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_margin="10dp"
+	        android:text="@string/ChooseMaterialInput"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <TableLayout
+	        android:id="@+id/elast_input_table"
+	        android:layout_below="@id/choose2_lbl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:stretchColumns="1"
+	        android:layout_margin="10dp">
+	
+	        <TableRow
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Spinner
+	                android:id="@+id/constant1_spinner"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:entries="@array/elastic_constants"/>
+	
+	            <include
+	                android:id="@+id/constant1_val"
+	                layout="@layout/actionedittext_view" />
+	            
+	        </TableRow>
+	
+	        <TableRow
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+	
+	            <Spinner
+	                android:id="@+id/constant2_spinner"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:entries="@array/elastic_constants"/>
+	
+	            <include
+	                android:id="@+id/constant2_val"
+	                layout="@layout/actionedittext_view" />
+	
+	        </TableRow>
+	        
+	    </TableLayout>
+	    
+	    <View
+	        android:id="@+id/elast_divider"
+	        android:layout_width="match_parent"
+	        android:layout_height="2dp"
+	        android:layout_below="@id/elast_input_table"
+	        android:layout_marginTop="5dp"
+	        android:background="#DADADA" />
+	    
+	    <TextView
+	        android:id="@+id/elast_error"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/elast_divider"
+	        android:paddingBottom="5dp"
+	        android:background="#DDDDDD" 
+	        android:gravity="center"
+	        android:textColor="#CC0000"
+	        android:text="@string/invalidConstDifferent"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+	        
+	    <TableLayout
+	        android:layout_below="@id/elast_error"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="10dp" 
+	        android:layout_centerHorizontal="true">
+	
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content">
+	
+			    <TextView
+			        android:id="@+id/elast_E_lbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
+			        android:paddingRight="20dp"
+			        android:text="@string/elast_E"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+	            <include
+			        android:id="@+id/elast_E_val"
+	                layout="@layout/formattedtextview_view" />
+			    
+	        </TableRow>
+	
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="10dp">
+	
+			    <TextView
+			        android:id="@+id/elast_v_lbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
+			        android:paddingRight="20dp"
+			        android:text="@string/elast_v"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+	            <include
+			        android:id="@+id/elast_v_val"
+	                layout="@layout/formattedtextview_view" />
+	
+	        </TableRow>
+	        
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="10dp">
+	
+			    <TextView
+			        android:id="@+id/elast_G_lbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
+			        android:paddingRight="20dp"
+			        android:text="@string/elast_G"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+	            <include
+			        android:id="@+id/elast_G_val"
+	                layout="@layout/formattedtextview_view" />
+	
+	        </TableRow>
+	        
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:layout_marginTop="10dp">
+	
+			    <TextView
+			        android:id="@+id/elast_K_lbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
+			        android:paddingRight="20dp"
+			        android:text="@string/elast_K"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+	            <include
+			        android:id="@+id/elast_K_val"
+	                layout="@layout/formattedtextview_view" />
+	
+	        </TableRow>
+	        
+	        <TableRow
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"  
+	            android:layout_marginTop="10dp">
+	
+			    <TextView
+	                android:id="@+id/elast_l_lbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
+			        android:paddingRight="20dp"
+			        android:text="@string/elast_l"
+			        android:textAppearance="?android:attr/textAppearanceMedium" />
+	            
+	            <include
+	                android:id="@+id/elast_l_val"
+	                layout="@layout/formattedtextview_view" />
+	
+	        </TableRow>
+	    </TableLayout>
+	
+	</RelativeLayout>
+
+</ScrollView>

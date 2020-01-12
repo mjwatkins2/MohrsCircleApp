@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/input_3d"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:isScrollContainer="true"
+    android:stretchColumns="1,3" >
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/inputXX_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Sx"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputXX_val"
+            layout="@layout/actionedittext_view"/>
+
+
+        <TextView
+            android:id="@+id/inputXY_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Txy"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputXY_val"
+            layout="@layout/actionedittext_view"/>
+        
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/inputRowSz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/inputYY_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Sy"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputYY_val"
+            layout="@layout/actionedittext_view"/>
+        
+
+        <TextView
+            android:id="@+id/inputYZ_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Tyz"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputYZ_val"
+            layout="@layout/actionedittext_view"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/inputRowTyz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/inputZZ_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Sz"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputZZ_val"
+            layout="@layout/actionedittext_view"/>
+        
+
+        <TextView
+            android:id="@+id/inputZX_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Tzx"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:id="@+id/inputZX_val"
+            layout="@layout/actionedittext_view"/>
+
+    </TableRow>
+</TableLayout>

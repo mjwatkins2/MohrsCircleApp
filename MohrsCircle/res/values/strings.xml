@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mohr\'s Circle</string>
+    <string name="inputtab">Input</string>
+    <string name="circletab">Plot!</string>
+    <string name="failuretab">Failure</string>
+    <string name="propertiestab">Properties</string>
+    <string name="Sx">σ<small>x</small></string>
+    <string name="Sy">σ<small>y</small></string>
+    <string name="Sz">σ<small>z</small></string>
+    <string name="Seq">σ<small>eq</small></string>
+    <string name="Txy">τ<small>xy</small></string>
+    <string name="Tyz">τ<small>yz</small></string>
+    <string name="Tzx">τ<small>zx</small></string>
+    <string name="Ex">ε<small>x</small></string>
+    <string name="Ey">ε<small>y</small></string>
+    <string name="Ez">ε<small>z</small></string>
+    <string name="Eeq">ε<small>eq</small></string>
+    <string name="Ei">ε<small>i</small></string>
+    <string name="Ej">ε<small>j</small></string>
+    <string name="Gxy">γ<small>xy</small></string>
+    <string name="Gyz">γ<small>yz</small></string>
+    <string name="Gzx">γ<small>zx</small></string>
+    <string name="Gij">γ<small>ij</small></string>
+    <string name="S1">σ<small>1</small></string>
+    <string name="S2">σ<small>2</small></string>
+    <string name="S3">σ<small>3</small></string>
+    <string name="E1">ε<small>1</small></string>
+    <string name="E2">ε<small>2</small></string>
+    <string name="E3">ε<small>3</small></string>
+    <string name="S">σ</string>
+    <string name="E">ε</string>
+    <string name="theta">θ</string>
+    <string name="thetap">θ<small>p</small></string>
+    <string name="T">τ</string>
+    <string name="G">γ</string>
+    <string name="Tmax">τ<small>max</small></string>
+    <string name="Gmax">γ<small>max</small></string>
+    <string name="testVal">1.23456E+5</string>
+    <string name="x">X</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="i">i</string>
+    <string name="j">j</string>
+    <string name="dx">dx</string>
+    <string name="dy">dy</string>
+    <string name="di">di</string>
+    <string name="dj">dj</string>
+    <string name="ijxyyzzx">ij=xy,yz,zx</string>
+    <string name="DimLong">Dimension</string>
+    <string name="DimShort">2D/3D</string>
+    <string name="StressStrainLong">Stress Strain</string>
+    <string name="StressStrainShort">Type</string>
+    <string name="Dim2D">2D</string>
+    <string name="Dim3D">3D</string>
+    <string name="Stress">Stress</string>
+    <string name="Strain">Strain</string>
+    <string name="Principals">Principals</string>
+    <string name="PrincipalDirections">Principal Directions</string>
+    <string name="Vectors">Vectors</string>
+    <string name="Cosines">Cosines</string>
+    <string name="Invariants">Invariants</string>
+    <string name="n1">n<small>1</small></string>
+    <string name="n2">n<small>2</small></string>
+    <string name="n3">n<small>3</small></string>
+    <string name="I1">I<small>1</small></string>
+    <string name="I2">I<small>2</small></string>
+    <string name="I3">I<small>3</small></string>
+    <string name="elast_E">Young\'s Modulus, E</string>
+    <string name="elast_v">Poisson\'s Ratio, v</string>
+    <string name="elast_G">Shear Modulus, G</string>
+    <string name="elast_K">Bulk Modulus, K</string>
+    <string name="elast_l">Lame\'s 1st Constant</string>
+    <string-array name="elastic_constants">
+        <item >Young\'s Modulus, E</item>
+        <item >Poisson\'s Ratio, v</item>
+        <item >Shear Modulus, G</item>
+        <item >Bulk Modulus, K</item>
+        <item >Lame\'s 1st Constant</item>
+    </string-array>
+    <string name="ChooseMaterialInput">Input two constants:</string>
+    <string name="DimensionSwitchTitle">Why the switch to 3D?</string>
+    <string name="DimensionSwitchMsg">In plane stress, out-of-plane strain terms may exist so that the z-stress components are zero. When converting to strain, the mode is changed to 3D so that the other strain components are shown. Converting from plane strain to stress is analogous.</string>
+    <string name="explain">Explain</string>
+    <string name="invalidConstDifferent">The two inputs must be different constants.</string>
+    <string name="v1">v1</string>
+    <string name="v2">v2</string>
+    <string name="v3">v3</string>
+    <string name="SlideRight">Input stress or strain data here, then slide right to view Mohr\'s circle!</string>
+    <string name="More">More</string>
+    <string name="DontShowAgain">Don\'t show again.</string>
+    <string name="OK">OK</string>
+    <string name="materialtab">Material</string>
+    <string name="MaterialLong">Material</string>
+    <string name="MaterialShort">Material</string>
+    <string name="Other">Other</string>
+    <string name="Ea">ε<small>a</small></string>
+    <string name="Eb">ε<small>b</small></string>
+    <string name="Ec">ε<small>c</small></string>
+    <string name="alpha">α</string>
+    <string name="beta">β</string>
+    <string name="gamma">γ</string>
+    <string name="rosette">Strain Rosette</string>
+    <string name="CloseX">X</string>
+    <string name="InputError">Error: Invalid input</string>
+    <string name="BuyPaidTitle">Get paid version in Play store:</string>
+    <string name="Upgrade">Upgrade!</string>
+</resources>

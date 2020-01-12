@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item format="integer" name="linewidth" type="integer">3</item><item type="integer" format="integer" name="plot_text_size">24</item>
+    
+</resources>

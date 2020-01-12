@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<!-- Note if this is a linear layout, then the plotview takes up the whole screen, so do a relative layout -->
+	
+    <include
+        android:id="@+id/principals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/principals_tablet" />
+
+    <View
+        android:id="@+id/plot_divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/principals"
+        android:background="#DADADA" />
+    
+    <com.engineercalc.mohrscircle.view.PlotView
+    	android:id="@+id/plot_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/plot_divider"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

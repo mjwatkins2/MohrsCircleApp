@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.engineercalc.mohrscircle.view.FormattedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:formattedTextView="http://schemas.android.com/apk/res/com.engineercalc.mohrscircle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:text="@string/testVal"
+    formattedTextView:decimalFormat="0.0###E+0"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+

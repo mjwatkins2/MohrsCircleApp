@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <!-- Note in the preview this is big, overlaps, and looks bad.
+    	 The actual view will be height-limited because it will squeeze
+    	 into a much thinner space and has a fixed aspect ratio. -->
+
+    <com.engineercalc.mohrscircle.view.UnitSquareView
+        android:id="@+id/unit_square_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/input_3d"
+        android:layout_centerHorizontal="true" />
+
+    <include
+        android:id="@+id/input_3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/input_3d" />
+    
+</RelativeLayout>
